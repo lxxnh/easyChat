@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="groupIndicatorLabeles">
+        <!-- <item>在线feihaoyou</item> -->
+        <item>在线好友</item>
+    </string-array>
+    
+</resources>

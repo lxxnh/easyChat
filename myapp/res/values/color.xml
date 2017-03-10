@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <drawable name="white">#FFFFFFFF</drawable>
+  <drawable name="black">#000000</drawable>
+  <drawable name="other">#fff00f</drawable>
+  <drawable name="blue">#56aaFF</drawable>
+  <drawable name="pink">#FFCCFF</drawable>
+  <drawable name="green">#00FF00</drawable>
+  <drawable name= "grey" >#666666</drawable>
+  
+  <color name="white">#FFFFFFFF</color>
+  <color name="black">#000000</color>
+  <color name="other">#fff00f</color>
+  <color name="blue">#56aaFF</color>
+  <color name="pink">#FFCCFF</color>
+  <color name="green">#00FF00</color>
+  <color name= "grey" >#666666</color>
+  <color name  ="grey_button">#D9D9D9</color>
+  <color name  ="grey_chat">#5B5B5B</color>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/receive_file_title"/>
+    <ListView android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:id="@+id/receive_file_list"/>
+    <LinearLayout android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_marginTop="10dp"
+    	android:orientation="horizontal">
+
+    	<Button
+    	    android:id="@+id/receive_file_okbtn"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginLeft="10dp"
+    	    android:layout_marginRight="5dp"
+    	    android:layout_weight="0.5"
+    	    android:background="@drawable/shape_button_pressed"
+    	    android:drawableLeft="@drawable/ok_icon"
+    	    android:text="@string/accept" />
+
+    	<Button android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		   android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+    		android:text="@string/close"
+    		android:layout_weight="0.5"
+    		android:drawableLeft="@drawable/cancel_icon"
+    		android:background="@drawable/shape_button_pressed"
+    		android:id="@+id/receive_file_cancel"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/person_chart_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+     android:background="@drawable/blue" >
+
+     <TextView
+         android:id="@+id/friends_name"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_gravity="center_vertical"
+         android:textColor="@drawable/white"
+         android:textSize="24sp" />
+
+     <TextView
+         android:id="@+id/back"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/friends_name"
+         android:layout_alignBottom="@+id/friends_name"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="5dp"
+         android:text="@string/back"
+         android:textColor="@drawable/white"
+         android:textSize="20sp" />
+
+     
+ </RelativeLayout>
+	
+	<ScrollView
+	    android:id="@+id/chart_msg_scroll"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"
+	    android:background="@drawable/chat_bg"
+	    android:scrollbars="vertical" >
+
+    	<LinearLayout android:layout_weight="1"
+			android:id="@+id/chart_msg_panel"
+			android:orientation="vertical"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent"/>
+    </ScrollView>
+    	
+  <!-- 底部按钮 -->
+
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="45dp"
+      android:background="@color/grey_button"
+      android:gravity="center"
+      android:orientation="horizontal" >
+
+	<Button
+	    android:id="@+id/chart_msg_file"
+	    android:layout_width="wrap_content"
+	    android:layout_height="36dp"
+	    android:background="@drawable/chat_button"
+	    android:drawableLeft="@drawable/ic_attachment_universal_small"
+	    android:text="@string/file"
+	    android:textColor="@color/grey_chat" />
+
+	<EditText
+	    android:id="@+id/chart_msg"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_gravity="center"
+	    android:layout_weight="1"
+	    android:lines="2"
+	    android:scrollbars="vertical" />
+
+    <Button
+        android:id="@+id/chart_msg_send"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:background="@drawable/chat_button"
+        android:text="@string/send"
+        android:textColor="@color/grey_chat" />
+
+  </LinearLayout>
+  
+</LinearLayout>

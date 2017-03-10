@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white"
+    android:orientation="vertical" >
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="55dp"
+     android:background="@drawable/blue" >
+
+     <TextView
+         android:id="@+id/peopleWantToApply"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_gravity="center_vertical"
+         android:text="@string/friends_apply"
+         android:textColor="@drawable/white"
+         android:textSize="24sp" />
+
+     <TextView
+         android:id="@+id/back"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/peopleWantToApply"
+         android:layout_alignBottom="@+id/peopleWantToApply"
+         android:layout_alignParentLeft="true"
+         android:layout_marginLeft="5dp"
+         android:text="@string/back"
+         android:textColor="@drawable/white"
+         android:textSize="20sp" />
+
+     <ImageView
+         android:id="@+id/delete"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_gravity="center_vertical"
+         android:layout_centerVertical="true"
+         android:layout_marginRight="5dp"
+         android:src="@drawable/ic_menu_cmcc_delete" />
+     
+ </RelativeLayout>
+    
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="34dp"
+     android:layout_gravity="center_vertical"
+     android:gravity="center_vertical"
+     android:orientation="vertical" >
+
+     <TextView
+         android:id="@+id/peopleWantToApply"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_vertical"
+         android:paddingLeft="5dp"
+         android:text="@string/people_want_to_apply"
+         android:textColor="@drawable/grey"
+         android:textSize="15sp" />
+
+ </LinearLayout>
+<TextView
+          android:id="@+id/textView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/black"
+          android:height="1dp"
+          android:text="TextView" />
+
+   <ListView
+       android:id="@+id/applyList"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/white" >
+
+    </ListView>
+    
+</LinearLayout>
